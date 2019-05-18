@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Metric Imperial Converter</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./public/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-primary mt-4 text-center">Metric Imperial Converter</h1>
+    <div class="card mt-4">
+      <div class="bs-component">
+        <span class="lead">Available Units : </span>
+        <span class="badge badge-pill badge-primary">kg</span>
+        <span class="badge badge-pill badge-primary">gal</span>
+        <span class="badge badge-pill badge-primary">litre (l)</span>
+        <span class="badge badge-pill badge-primary">mi</span>
+        <span class="badge badge-pill badge-primary">km</span>
+        <span class="badge badge-pill badge-primary">lbs</span>
+      </div>
+      <div class="card-body text-center mt-2">
+        <div class="alert-container"></div>
+        <form id="convertForm">
+          <input type="text" class="form-control" id="query" placeholder="e.g, 2.2lbs">
+          <input type="submit" class="btn btn-primary btn-lg mt-4" value="Convert">
+          <p class="lead" id="result"></p>
+        </form>
+      </div>
+    </div>
+    <div class="mt-4">
+      <h1>Example Usage: </h1>
+      <ul class="mt-2">
+        <li><code><a href="/api/convert?input=4gal">/api/convert?input=4gal</a></code></li>
+        <li><code><a href="/api/convert?input=1/2km">/api/convert?input=1/2km</a></code></li>
+        <li><code><a href="/api/convert?input=5.4/3lbs">/api/convert?input=5.4/3lbs</a></code></li>
+        <li><code><a href="/api/convert?input=kg">/api/convert?input=kg</a></code></li>
+      </ul>
+    </div>
+  </div>
+  <script src="./public/index.js"></script>
+</body>
+
+</html>
